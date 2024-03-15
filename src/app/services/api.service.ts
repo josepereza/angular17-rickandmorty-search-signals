@@ -20,7 +20,7 @@ export class ApiService {
      
     this.http
     .get<Personajes>(
-      `https://rickandmortyapi.com/api/character/?name=${this.searchQuery()}&status=alive`
+      `https://rickandmortyapi.com/api/character/?name=${filter}&status=alive`
     )
     .subscribe((data) => {
       this.personajes$.set(data.results);
