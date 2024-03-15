@@ -10,6 +10,10 @@ import { Personaje } from '../../interfaces/iRickandmorty';
 })
 export class CardComponent {
   @Input({ required: true })personaje!:Personaje
+
+  //La de abajo es otra forma de introducir el input mediante una signal
+  //en el template habria que imprimirlo como signal: Ej: personaje().image
+
   //personaje = input.required<Personaje>(); // InputSignal<string>
 
 }
